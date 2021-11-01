@@ -2,7 +2,7 @@ body {
     	margin-top:100px;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-    	background: url(background1.jpg) center center fixed;
+    	background: url(../assets/background1.jpg) center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

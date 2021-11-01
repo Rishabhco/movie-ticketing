@@ -124,7 +124,7 @@ p.text span {
 }
 
 .card{
-  background: url("cardbackground.jpg");
+  background: url("../assets/cardbackground.jpg");
   float: left;
   margin-left: 100px;
   border:#ff7700;
@@ -146,7 +146,7 @@ p.text span {
 }
 
 #billsum{
-  background: url("billbackground.jpg");
+  background: url("../assets/billbackground.jpg");
   border: none;
   margin: 0% auto;
 }

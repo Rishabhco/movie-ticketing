@@ -1,7 +1,7 @@
 @import url('//fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 body{
-  background: url(background1.jpg) center center fixed;
+  background: url(../assets/background1.jpg) center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
