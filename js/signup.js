@@ -12,11 +12,11 @@ function validate(){
     document.getElementById("femail").innerHTML= "Please enter a valid email!";  
   return false;
   }  
-  else{
-    document.getElementById("femail").innerHTML= "";
-  }
+  // else{
+    // document.getElementById("femail").innerHTML= "";
+  // }
   
-  if(password.length<6){  
+  else if(password.length<6){  
     document.getElementById("fpass").style.color="red";
     document.getElementById("fpass1").style.color="red";
     document.getElementById("fpass").style.margin="45px";
@@ -26,19 +26,31 @@ function validate(){
     return false;  
   }
 
-  else{
-    document.getElementById("fpass").innerHTML="";
-    document.getElementById("fpass1").innerHTML="";
-  }
+  // else{
+  //   document.getElementById("fpass").innerHTML="";
+  //   document.getElementById("fpass1").innerHTML="";
+  // }
   
-  if(password==secondpassword){  
-    return true;  
-  }  
-  if(password!=secondpassword){  
+  // if(password==secondpassword){  
+  //   return true;  
+  // }  
+  else if(password!=secondpassword){  
     document.getElementById("fcpass").style.color="red";
     document.getElementById("fcpass").style.padding="45px";
     document.getElementById("fcpass").innerHTML="Password must be same!!";  
     return false;  
+  }
+  else{
+    axios.post('https://localhost:3000/signup', {
+      name: username,
+      email: x,
+      password: password
+    }).then((response) => {
+          // output.textContent = data.result
+          console.log(response);
+    }).catch((err)=>{
+      console.log(err);
+    })
   }
 }
 
