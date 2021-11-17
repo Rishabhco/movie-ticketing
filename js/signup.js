@@ -1,4 +1,5 @@
 function validate(){
+  event.preventDefault();
   var username=document.myform.username.value;
   var password=document.myform.password.value; 
   var x=document.myform.email.value;  
@@ -41,7 +42,8 @@ function validate(){
     return false;  
   }
   else{
-    axios.post('https://localhost:3000/signup', {
+    console.log('henlo');
+    axios.post('https://movie-ticketing-server.herokuapp.com/signup', {
       name: username,
       email: x,
       password: password
